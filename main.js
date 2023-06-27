@@ -24,8 +24,15 @@ function obtenerPoses(resultados){
 }
 
     function draw(){
+        background("rgba(255,225,255,1)");
         fill("mediumvioletred");
         stroke("black");
         mitad = distancia/2
-        square(narizX-mitad, narizY-mitad, distancia);
+        mensaje = "kuchau"
+        image(kuchau, narizX-mitad, narizY-mitad, 100, 50 )
+        text(mensaje, narizX-mitad, narizY-mitad);
+        textSize(mitad);
+    }
+    function preload(){
+        kuchau = loadImage("elpepe.png");
     }
